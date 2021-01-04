@@ -9,8 +9,8 @@ export const VehicleManteinanceProvider: React.FC<Props> = ({ children }) => {
 
   const getVehicles = async () => {
     try {
-      const url = "http://localhost:4000/api/v1/vehicles"
-      //const url = "https://agile-retreat-94192.herokuapp.com/api/v1/vehicles"
+      //const url = "http://localhost:4000/api/v1/vehicles"
+      const url = "https://agile-retreat-94192.herokuapp.com/api/v1/vehicles"
       const response: AxiosResponse = await Axios.get<IVehicle[]>(url)
       if (response.data) {
         setVehicles(response.data.vehicles)
