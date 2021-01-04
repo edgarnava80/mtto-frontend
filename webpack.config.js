@@ -15,7 +15,7 @@ const config = {
   mode: "development",
   entry: "./src/index.tsx",
   output: {
-    path: path.resolve(__dirname, "docs"),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
   },
   plugins: [new HtmlWebpackPlugin({ template: "./index.html" })],
